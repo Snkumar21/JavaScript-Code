@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    
+    <style>
+    /* Element Selector */
+        p {
+        color: blue;
+        }
+
+        /* ID Selector */
+        #header {
+        background-color: yellow;
+        padding: 10px;
+        }
+
+        /* Class Selector */
+        .container {
+        padding: 20px;
+        border: 1px solid black;
+        }
+
+        /* Universal Selector */
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        /* Attribute Selector */
+        input[type="text"] {
+        border: 1px solid black;
+        padding: 5px;
+        }
+
+        /* Descendant Selector */
+        div p {
+        color: red;
+        }
+
+        /* Child Selector */
+        ul > li {
+        list-style-type: none;
+        }
+
+        /* Pseudo-class Selector */
+        a:hover {
+        color: green;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <!-- ID Selector -->
+    <div id="header">
+        <h1>Welcome to CSS Selector Demo</h1>
+    </div>
+    <p>This is a paragraph inside a container. It should be blue due to the element selector.</p>
+
+    <!-- Class Selector -->
+    <div class="container">
+        <p>This is a paragraph inside a container. It should be blue due to the element selector.</p>
+        <p>This paragraph is also inside a container and styled the same way.</p>
+
+        <!-- Descendant Selector -->
+        <div>
+            <p>This paragraph is inside another div, so it should be red.</p>
+        </div>
+
+        <!-- Child Selector -->
+        <ul>
+            <li>First item without a bullet.</li>
+            <li>Second item without a bullet.</li>
+        </ul>
+
+        <!-- Attribute Selector -->
+        <form>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+        </form>
+
+        <!-- Pseudo-class Selector -->
+        <a href="#">Hover over this link to change its color to green.</a>
+    </div>
+
+</body>
+</html>

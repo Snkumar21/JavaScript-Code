@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h1>Basic Calculator</h1>
+        
+        <!-- Input fields for numbers -->
+        <div class="input-section">
+            <label for="num1">Enter First Number:</label>
+            <input type="number" id="num1" placeholder="First Number">
+        </div>
+
+        <div class="input-section">
+            <label for="num2">Enter Second Number:</label>
+            <input type="number" id="num2" placeholder="Second Number">
+        </div>
+
+        <!-- Buttons for operations -->
+        <div class="button-section">
+            <button onclick="performCalculation('add')">Add</button>
+            <button onclick="performCalculation('subtract')">Subtract</button>
+            <button onclick="performCalculation('multiply')">Multiply</button>
+            <button onclick="performCalculation('divide')">Divide</button>
+        </div>
+
+        <!-- Display result -->
+        <div class="result-section">
+            <h2>Result: <span id="result">0</span></h2>
+        </div>
+    </div>
+
+</body>
+</html>

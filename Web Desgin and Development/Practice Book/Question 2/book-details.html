@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .book-info {
+            margin: 20px;
+        }
+    </style>
+    <script>
+        function loadBookDetails() {
+            // Get the query parameter (book ID)
+            const urlParams = new URLSearchParams(window.location.search);
+            const bookId = urlParams.get('book');
+            
+            // Dummy data for book details
+            const books = {
+                1: {
+                    title: "The Great Gatsby",
+                    author: "F. Scott Fitzgerald",
+                    description: "A novel set in the Roaring Twenties that explores themes of wealth, love, and the American Dream.",
+                    year: "1925"
+                },
+                2: {
+                    title: "1984",
+                    author: "George Orwell",
+                    description: "A dystopian novel that presents a terrifying vision of a totalitarian regime.",
+                    year: "1949"
+                },
+                3: {
+                    title: "To Kill a Mockingbird",
+                    author: "Harper Lee",
+                    description: "A novel that tackles serious issues like racial inequality and moral growth through the eyes of young Scout Finch.",
+                    year: "1960"
+                }
+            };
+
+            // Display book details based on bookId
+            const book = books[bookId];
+            if (book) {
+                document.getElementById('book-title').innerText = book.title;
+                document.getElementById('book-author').innerText = "Author: " + book.author;
+                document.getElementById('book-description').innerText = book.description;
+                document.getElementById('book-year').innerText = "Published Year: " + book.year;
+            } else {
+                document.getElementById('book-info').innerText = "Book not found!";
+            }
+        }
+    </script>
+</head>
+<body onload="loadBookDetails()">
+
+    <header>
+        <h1 id="book-title">Book Title</h1>
+    </header>
+
+    <section class="book-info">
+        <p id="book-author">Author: </p>
+        <p id="book-description">Description: </p>
+        <p id="book-year">Published Year: </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Book Information Website</p>
+    </footer>
+
+</body>
+</html>
