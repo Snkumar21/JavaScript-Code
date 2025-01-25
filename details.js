@@ -1,3 +1,4 @@
+//This is a Employee Details display in JavaScript.
 let employee = {
     details: function (designation, experience) {
         return this.name
