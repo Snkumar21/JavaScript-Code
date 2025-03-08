@@ -1,4 +1,6 @@
-let employee = {
+// Example of displaying student details in javascript...
+
+let display = {
     details: function (program, year) {
         return this.name
         + " "
@@ -6,15 +8,17 @@ let employee = {
         + program
         + year;
     }
-}//Objects declaration
+} // Objects declaration
+
 let student1 = {
-    name: "Rakesh",
-    rollNo: "01",
-}
-let student2 = {
-    name: "Ram",
-    rollNo: "45 ",
+    name: "Nitish",
+    rollNo: "2024-M-30092002A",
 }
 
-let x = employee.details.call(student2, "MCA", " 1st year");
+let student2 = {
+    name: "Aastha",
+    rollNo: "2024-M-19102002B",
+}
+
+let x = display.details.call(student1, "MCA", " 1st year");
 console.log(x);
