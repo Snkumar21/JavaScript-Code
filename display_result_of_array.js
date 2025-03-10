@@ -1,3 +1,5 @@
+// Example of displaying result from a array.
+
 // Original array
 let num = [88, 50, 25, 10];
 
