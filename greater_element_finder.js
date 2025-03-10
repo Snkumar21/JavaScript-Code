@@ -1,3 +1,5 @@
+// Example of finding greater element from the array index.
+
 // LastIndexOf() method
 function isGreaterThan5(element, index, array) {
     return element > 5;
