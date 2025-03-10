@@ -1,3 +1,5 @@
+// Example of printing statement in console.log
+
 const personPrototype = {
     greeting: function() {
         console.log(`Hello, my name is ${this.name}.`);
