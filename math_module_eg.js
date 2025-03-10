@@ -1,3 +1,5 @@
+// Example of displaying result using math module in javaScript.
+
 // Original array
 let num = [4, 9, 16, 25];
 
