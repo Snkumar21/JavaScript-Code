@@ -1,3 +1,5 @@
+// Example of Weather JavaScript.
+
 // Task 1: Simulate Geolocation Data
 function getUserLocation() {
     // Simulated location data for New York
