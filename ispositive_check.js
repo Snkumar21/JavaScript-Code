@@ -1,3 +1,5 @@
+// Example of checking positive element from the array.
+
 // JavaScript code for every() function
 function ispositive(element, index, array) {
     return element > 0;
