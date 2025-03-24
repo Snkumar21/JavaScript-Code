@@ -1,3 +1,4 @@
+// Example of checking positive number from the list.
 // JavaScript code for every() function
 function ispositive(element, index, array) {
     return element > 0;
